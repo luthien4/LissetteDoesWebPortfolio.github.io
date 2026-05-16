@@ -67,41 +67,71 @@
 
 						<section id="two" class="spotlights">
 							<section>
-								<a href="#" class="image">
+								<a href="reg.html" class="image">
 									<img src="images/regression-projects-ai.png" alt="Regression analytics concept image" data-position="center center" />
 								</a>
 								<div class="content">
 									<div class="inner">
 										<header class="major">
-											<h3>Modeling Foundations</h3>
+											<h3>Traffic Waiting Time Prediction</h3>
 										</header>
-										<p>Notes on regression, classification, cross-validation, train-test splitting, model selection, hyperparameter tuning, and evaluation metrics such as MAE, RMSE, R2, precision, recall, F1-score, and ROC-AUC.</p>
+										<p>This regression project uses theory to make practical modeling decisions. The target, <code>wait_sec</code>, is continuous, so the model is evaluated with metrics that describe prediction error in seconds rather than accuracy.</p>
+										<p><strong>Concepts used in practice:</strong> regression framing, MAE and RMSE, train-validation splitting, domain-based data cleaning, outlier inspection, feature engineering, preprocessing pipelines, hyperparameter tuning, external holdout evaluation, and permutation importance.</p>
+										<p><strong>Why it matters:</strong> the project does not only fit a model. It checks whether the data is realistic, creates meaningful time and route features, compares models, and explains which predictors drive waiting-time predictions.</p>
+										<ul class="actions">
+											<li><a href="https://github.com/luthien4/traffic-wait-time-prediction-quito" target="_blank" class="button">Project Repo</a></li>
+										</ul>
 									</div>
 								</div>
 							</section>
 							<section>
-								<a href="#" class="image">
+								<a href="cls.html" class="image">
 									<img src="images/classification-projects-ai.png" alt="Classification workflow concept image" data-position="center center" />
 								</a>
 								<div class="content">
 									<div class="inner">
 										<header class="major">
-											<h3>Project Decisions</h3>
+											<h3>Hotel Booking Cancellation Prediction</h3>
 										</header>
-										<p>Short explanations of decisions that appear across my projects: feature availability, data leakage, outlier treatment, class imbalance, preprocessing pipelines, model interpretation, and communicating results to business stakeholders.</p>
+										<p>This classification project is built around a business question: which bookings are likely to be canceled? The most important methodological idea is to avoid using information that would not be available at prediction time.</p>
+										<p><strong>Concepts used in practice:</strong> supervised classification, target definition, feature availability, data leakage prevention, stratified splitting, class imbalance, SMOTE inside cross-validation, precision, recall, F1-score, ROC-AUC, confusion matrix analysis, and feature importance.</p>
+										<p><strong>Why it matters:</strong> accuracy alone can hide poor performance on canceled bookings. Recall, precision, and ROC-AUC give a more honest view of whether the model can support business decisions.</p>
+										<ul class="actions">
+											<li><a href="https://github.com/luthien4/hotel-booking-cancellation-prediction" target="_blank" class="button">Project Repo</a></li>
+										</ul>
 									</div>
 								</div>
 							</section>
 							<section>
-								<a href="#" class="image">
+								<a href="dashboard.html" class="image">
+									<img src="images/dashboard-projects.png" alt="Dashboard analytics concept image" data-position="center center" />
+								</a>
+								<div class="content">
+									<div class="inner">
+										<header class="major">
+											<h3>Global Internet Usage Dashboard</h3>
+										</header>
+										<p>This dashboard project uses data analysis concepts to turn a large international dataset into an interactive story. The focus is not model training, but clear exploration, comparison, and communication.</p>
+										<p><strong>Concepts used in practice:</strong> data cleaning, exploratory data analysis, aggregation, time trends, geographic comparison, interactive filtering, visual encoding, dashboard layout, and user-oriented communication.</p>
+										<p><strong>Why it matters:</strong> a dashboard should help users ask better questions. The design choices support comparison across countries, continents, years, and economic indicators.</p>
+										<ul class="actions">
+											<li><a href="https://internet-usage-dashboard-g8anbw2xknjbpb4jgvee69.streamlit.app/" target="_blank" class="button">Live Dashboard</a></li>
+											<li><a href="https://github.com/luthien4/internet-usage-dashboard" target="_blank" class="button">Project Repo</a></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+							<section>
+								<a href="unsupervised.html" class="image">
 									<img src="images/unsupervised-projects-ai.png" alt="Unsupervised learning concept image" data-position="center center" />
 								</a>
 								<div class="content">
 									<div class="inner">
 										<header class="major">
-											<h3>Expanding Topics</h3>
+											<h3>Upcoming Unsupervised Learning Work</h3>
 										</header>
-										<p>As new projects are added, this section will grow to include clustering, dimensionality reduction, geospatial analysis, dashboard design, SQL analytics, data engineering concepts, and reproducible project organization.</p>
+										<p>This part of the portfolio will grow as I add clustering and segmentation projects. The theory will be connected to practical questions such as how to choose features, scale variables, evaluate cluster quality, and explain the discovered groups.</p>
+										<p><strong>Concepts planned:</strong> K-Means, hierarchical clustering, DBSCAN, PCA, silhouette score, cluster profiling, anomaly detection, and dimensionality reduction for visualization.</p>
 									</div>
 								</div>
 							</section>
@@ -110,9 +140,10 @@
 						<section id="three">
 							<div class="inner">
 								<header class="major">
-									<h2>Current Status</h2>
+									<h2>How I Use These Notes</h2>
 								</header>
-								<p>This library will be built gradually as I refine each portfolio project. Each note should support a real project decision, so the section stays practical and connected to applied data work.</p>
+								<p>Each concept added here should answer a practical question from a real project: why a metric was chosen, why a feature was removed, why an outlier was treated, why a model was evaluated a certain way, or how a visualization supports interpretation.</p>
+								<p>This keeps the section close to applied data work and avoids turning it into a disconnected theory archive.</p>
 								<ul class="actions">
 									<li><a href="index.html" class="button next">Back to Portfolio</a></li>
 								</ul>
