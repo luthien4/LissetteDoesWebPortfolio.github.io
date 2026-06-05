@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">SQL and database analytics illustration</title>
+  <desc id="desc">Pastel dashboard-style illustration with database tables, SQL query panels, charts, and data flow arrows.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fbfb"/>
+      <stop offset=".55" stop-color="#eef8f7"/>
+      <stop offset="1" stop-color="#fdf6f3"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#78cdd0"/>
+      <stop offset="1" stop-color="#4d9db8"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cce8d4"/>
+      <stop offset="1" stop-color="#8dbb8c"/>
+    </linearGradient>
+    <linearGradient id="coral" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd3cc"/>
+      <stop offset="1" stop-color="#f28f84"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#5d8491" flood-opacity=".18"/>
+    </filter>
+    <style>
+      .panel{fill:#fff;stroke:#dce9ec;stroke-width:2;filter:url(#shadow)}
+      .soft{fill:#eef8f7}
+      .line{stroke:#8ab8c5;stroke-width:4;fill:none;stroke-linecap:round;stroke-dasharray:9 13}
+      .muted{fill:#d9d9d9}
+      .text{fill:#8797a0}
+      .stroke{stroke:#6aaebf;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <path d="M0 720 C190 610 320 690 480 650 C640 610 700 480 880 525 C1110 580 1180 760 1600 630 L1600 900 L0 900 Z" fill="#dff3f1" opacity=".65"/>
+  <path d="M1080 0 C1200 140 1390 80 1600 210 L1600 0 Z" fill="#e9f7f5" opacity=".85"/>
+  <circle cx="170" cy="125" r="72" fill="#e8f5f3"/>
+  <circle cx="1370" cy="770" r="96" fill="#fff2ec" opacity=".9"/>
+
+  <rect x="95" y="115" width="440" height="285" rx="28" class="panel"/>
+  <rect x="125" y="145" width="380" height="48" rx="12" fill="#eef6f7"/>
+  <circle cx="157" cy="169" r="12" fill="#69b8c8"/>
+  <circle cx="198" cy="169" r="12" fill="#9cc99a"/>
+  <circle cx="239" cy="169" r="12" fill="#f28f84"/>
+  <rect x="135" y="230" width="150" height="18" rx="9" fill="#8ac6d0"/>
+  <rect x="135" y="276" width="330" height="14" rx="7" class="muted" opacity=".65"/>
+  <rect x="135" y="320" width="285" height="14" rx="7" class="muted" opacity=".55"/>
+  <text x="135" y="370" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="700" fill="#53707a">SQL</text>
+  <path d="M260 348 h138" stroke="#8ac6d0" stroke-width="12" stroke-linecap="round"/>
+  <path d="M260 382 h190" stroke="#d7e3e5" stroke-width="12" stroke-linecap="round"/>
+
+  <rect x="585" y="95" width="520" height="330" rx="30" class="panel"/>
+  <rect x="630" y="140" width="430" height="205" rx="20" fill="#fbfdfd" stroke="#e6eeee" stroke-width="2"/>
+  <g transform="translate(665 170)">
+    <rect width="360" height="32" rx="7" fill="#eef7f7"/>
+    <rect y="52" width="360" height="32" rx="7" fill="#fff4f0"/>
+    <rect y="104" width="360" height="32" rx="7" fill="#eef7f7"/>
+    <rect y="156" width="360" height="32" rx="7" fill="#fff4f0"/>
+    <path d="M0 43 h360 M0 95 h360 M0 147 h360" stroke="#e3ebed" stroke-width="2"/>
+    <path d="M95 0 v188 M225 0 v188" stroke="#e3ebed" stroke-width="2"/>
+    <rect x="18" y="10" width="55" height="12" rx="6" fill="#73bdc8"/>
+    <rect x="115" y="10" width="76" height="12" rx="6" fill="#9cc99a"/>
+    <rect x="244" y="10" width="60" height="12" rx="6" fill="#f2aaa0"/>
+    <rect x="18" y="62" width="55" height="12" rx="6" fill="#73bdc8"/>
+    <rect x="115" y="62" width="76" height="12" rx="6" fill="#9cc99a"/>
+    <rect x="244" y="62" width="60" height="12" rx="6" fill="#f2aaa0"/>
+  </g>
+  <rect x="665" y="372" width="85" height="16" rx="8" fill="#73bdc8"/>
+  <rect x="770" y="372" width="130" height="16" rx="8" fill="#d5e4e6"/>
+  <rect x="920" y="372" width="62" height="16" rx="8" fill="#f2aaa0"/>
+
+  <rect x="1170" y="135" width="330" height="250" rx="28" class="panel"/>
+  <g transform="translate(1220 195)">
+    <ellipse cx="105" cy="32" rx="105" ry="32" fill="url(#teal)" opacity=".85"/>
+    <path d="M0 32 v116 c0 18 47 32 105 32s105-14 105-32V32" fill="url(#teal)" opacity=".85"/>
+    <ellipse cx="105" cy="148" rx="105" ry="32" fill="#4d9db8" opacity=".9"/>
+    <ellipse cx="105" cy="86" rx="105" ry="32" fill="none" stroke="#d6f0ef" stroke-width="6" opacity=".8"/>
+  </g>
+
+  <path d="M535 270 C565 270 565 270 585 270" class="line"/>
+  <path d="M1105 270 C1135 270 1135 270 1170 270" class="line"/>
+
+  <rect x="115" y="525" width="360" height="245" rx="28" class="panel"/>
+  <rect x="155" y="650" width="46" height="84" rx="8" fill="#badfcb"/>
+  <rect x="225" y="605" width="46" height="129" rx="8" fill="#8ac6d0"/>
+  <rect x="295" y="565" width="46" height="169" rx="8" fill="#6a9fb5"/>
+  <rect x="365" y="625" width="46" height="109" rx="8" fill="#f2aaa0"/>
+  <rect x="155" y="560" width="210" height="18" rx="9" fill="#d9e7e8"/>
+  <rect x="155" y="520" width="105" height="18" rx="9" fill="#8ac6d0"/>
+
+  <rect x="560" y="545" width="430" height="230" rx="28" class="panel"/>
+  <polyline points="610,705 670,645 735,670 795,600 860,620 940,565" class="stroke"/>
+  <circle cx="610" cy="705" r="10" fill="#6aaebf"/>
+  <circle cx="670" cy="645" r="10" fill="#6aaebf"/>
+  <circle cx="735" cy="670" r="10" fill="#6aaebf"/>
+  <circle cx="795" cy="600" r="10" fill="#6aaebf"/>
+  <circle cx="860" cy="620" r="10" fill="#6aaebf"/>
+  <circle cx="940" cy="565" r="10" fill="#6aaebf"/>
+  <rect x="610" y="575" width="145" height="18" rx="9" fill="#d9e7e8"/>
+  <rect x="610" y="535" width="92" height="18" rx="9" fill="#9cc99a"/>
+
+  <rect x="1065" y="535" width="410" height="260" rx="28" class="panel"/>
+  <circle cx="1150" cy="635" r="72" fill="url(#mint)"/>
+  <path d="M1150 635 L1150 563 A72 72 0 0 1 1219 613 Z" fill="#6a9fb5"/>
+  <path d="M1150 635 L1219 613 A72 72 0 0 1 1135 705 Z" fill="#f28f84"/>
+  <rect x="1270" y="585" width="155" height="16" rx="8" fill="#d9e7e8"/>
+  <rect x="1270" y="630" width="120" height="16" rx="8" fill="#8ac6d0"/>
+  <rect x="1270" y="675" width="175" height="16" rx="8" fill="#d9e7e8"/>
+
+  <path d="M475 650 C520 650 520 650 560 650" class="line"/>
+  <path d="M990 650 C1030 650 1030 650 1065 650" class="line"/>
+</svg>
