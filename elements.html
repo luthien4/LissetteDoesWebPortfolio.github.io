@@ -60,7 +60,7 @@
 								<header class="major">
 									<h2>Why This Section Exists</h2>
 								</header>
-								<p>This section is a growing collection of the concepts I use while building data projects. It connects theory with practical decisions: how I choose evaluation metrics, prevent data leakage, handle class imbalance, validate models, engineer features, and interpret results.</p>
+								<p>This section is a growing collection of the concepts I use while building data projects. It connects theory with practical decisions: how I choose evaluation metrics, prevent data leakage, handle class imbalance, validate models, engineer features, design data pipelines, build SQL summaries, model dashboard data, and interpret results.</p>
 								<p>The goal is not to document everything I study. The goal is to make visible how I think through data problems and turn technical concepts into clear, defensible analysis.</p>
 							</div>
 						</section>
@@ -73,11 +73,11 @@
 								<div class="content">
 									<div class="inner">
 										<header class="major">
-											<h3>Traffic Waiting Time Prediction</h3>
+											<h3>Traffic Waiting Time Prediction in Quito</h3>
 										</header>
-										<p>This regression project uses theory to make practical modeling decisions. The target, <code>wait_sec</code>, is continuous, so the model is evaluated with metrics that describe prediction error in seconds rather than accuracy.</p>
-										<p><strong>Concepts used in practice:</strong> regression framing, MAE and RMSE, train-validation splitting, domain-based data cleaning, outlier inspection, feature engineering, preprocessing pipelines, hyperparameter tuning, external holdout evaluation, and permutation importance.</p>
-										<p><strong>Why it matters:</strong> the project does not only fit a model. It checks whether the data is realistic, creates meaningful time and route features, compares models, and explains which predictors drive waiting-time predictions.</p>
+										<p>This regression project predicts traffic-related taxi waiting time in Quito. The target, <code>wait_sec</code>, is continuous and measured in seconds, so the workflow uses regression metrics that are directly understandable for transportation and user-experience decisions.</p>
+										<p><strong>Concepts used in practice:</strong> regression framing, MAE and RMSE, geographic data validation, domain-based coordinate cleaning, implied-speed outlier treatment, datetime feature engineering, route-based features, geospatial analysis, scikit-learn pipelines, model comparison, RandomizedSearchCV tuning, external holdout evaluation, and permutation importance.</p>
+										<p><strong>Why it matters:</strong> the project does not only fit a model. It checks whether trip records are realistic, uses Quito-specific geographic rules, compares regression models, validates performance on an external holdout set, and explains which temporal, route, and location features drive waiting-time predictions.</p>
 										<ul class="actions">
 											<li><a href="https://github.com/luthien4/traffic-wait-time-prediction-quito" target="_blank" class="button">Project Repo</a></li>
 										</ul>
@@ -117,6 +117,42 @@
 										<ul class="actions">
 											<li><a href="https://internet-usage-dashboard-g8anbw2xknjbpb4jgvee69.streamlit.app/" target="_blank" class="button">Live Dashboard</a></li>
 											<li><a href="https://github.com/luthien4/internet-usage-dashboard" target="_blank" class="button">Project Repo</a></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+							<section>
+								<a href="sql.html" class="image">
+									<img src="images/restaurant-inspection-kitchen.jpg" alt="Commercial restaurant kitchen used as project image for inspection risk analytics" data-position="center center" />
+								</a>
+								<div class="content">
+									<div class="inner">
+										<header class="major">
+											<h3>Restaurant Inspection Risk & Compliance Analytics</h3>
+										</header>
+										<p>This project connects public API data collection with SQL-based analytical reporting. The methodological focus is building a reproducible path from raw inspection records to trustworthy compliance indicators.</p>
+										<p><strong>Concepts used in practice:</strong> API data extraction, pagination planning, row-count validation, raw-to-cleaned data handling, CSV exports, SQLite database loading, schema design, SQL aggregation, conditional counts, percentage calculations, grouping by facility type, outcome, ZIP code, and inspection period, plus validation checks before analysis.</p>
+										<p><strong>Why it matters:</strong> inspection data can easily produce misleading summaries if categories, outcomes, missing values, and inspection volume are not handled carefully. The project demonstrates how SQL can turn operational records into clear risk and compliance signals.</p>
+										<ul class="actions">
+											<li><a href="https://github.com/luthien4/restaurant-inspection-risk-analytics" target="_blank" class="button">Project Repo</a></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+							<section>
+								<a href="dashboard.html" class="image">
+									<img src="images/hamburg-public-expenditure-powerbi.png" alt="Hamburg public expenditure Power BI dashboard screenshot" data-position="center center" />
+								</a>
+								<div class="content">
+									<div class="inner">
+										<header class="major">
+											<h3>Hamburg Public Expenditure Dashboard</h3>
+										</header>
+										<p>This Power BI project applies business intelligence methods to official public finance data. The focus is transforming a difficult statistical source table into a model that supports KPI reporting, variance analysis, and category-level drill-down.</p>
+										<p><strong>Concepts used in practice:</strong> Power Query cleaning, delimiter and locale handling, wide-to-long reshaping, fact table creation, dimension table design, relationship modeling, DAX measures, KPI cards, variance analysis, slicers, visual hierarchy, dashboard layout, and source-data caveats.</p>
+										<p><strong>Why it matters:</strong> financial dashboards need both accurate numbers and clear explanations. This project separates official totals from detailed category rows, documents accounting hierarchy limitations, and presents the result in a stakeholder-ready format.</p>
+										<ul class="actions">
+											<li><a href="https://github.com/luthien4/hamburg-public-expenditure-powerbi" target="_blank" class="button">Project Repo</a></li>
 										</ul>
 									</div>
 								</div>
